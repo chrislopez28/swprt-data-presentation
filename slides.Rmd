@@ -1,0 +1,52 @@
+---
+title: "R for Water Quality: <br>Region 4 Experiences"
+author: "Chris Lopez <br>Los Angeles Water Board"
+date: "December 11, 2018"
+output: ioslides_presentation
+autosize: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## R Markdown
+
+This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+## Presentation Objectives
+
+- Show some examples of how R can be used in our work as a water quality regulatory agency
+- Show that R is not prohibitively complex
+- Share some strengths and weaknesses of R as a tool
+
+## My Background
+
+- WRCE in Municipal Stormwater Permitting Unit (i.e. MS4 Unit)
+- 9 Years with the Waterboards
+- Some rudimentary background in programming/coding
+
+## Slide with Bullets
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## What does R look like?
+
+<img src="images/rstudioscreen.png" align="middle" height="450" width="750" margin="0 auto" />
+
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r pressure}
+plot(pressure)
+```
+
