@@ -58,31 +58,16 @@ When you click the **Knit** button a document will be generated that includes bo
 
 ## My Background
 
-- WRCE in Municipal Stormwater Permitting Unit (i.e. MS4 Unit)
+- Staff in Municipal Stormwater Permitting Unit (i.e. the MS4 Unit)
 - Some rudimentary background in programming/coding
 - Enjoy learning new things
+- Appreciate good communication of information
 
 ## Some Background of R
 
 - __Programming__ Language and Environment for Statistical Computing and Graphics
 - __Open-source__
 - Large ecosystem of freely available __packages__
-
-## RStudio
-
-- Free and Open-Source "Integrated Development Environment (IDE)" for R
-- _Highly, highly recommended if you want to use <footnote content="Chris is not affiliated with RStudio nor receives any incentives for recommending RStudio">R!!!_
-
-<img src="images/RStudio.png" align="middle" height="200" width="400") />
-
-
-## What does R look like?
-
-<img src="images/rstudioscreen.png" align="middle" height="450" width="750" margin="0 auto" />
-
-## What does R look like?
-
-<img src="images/rstudioscreen_captions.png" align="middle" height="450" width="750" margin="0 auto" />
 
 ## Example 1: Plotting IGP Sites on Map
 
@@ -178,18 +163,85 @@ lst <- extract_tables(report, encoding="UTF-8")
 
 ## Example 3: Analyzing Large Datasets for Compliance - Bacteria
 
+- Renewal of Region 4 Phase I MS4 Permits
+- ~50 TMDLs with Limitations incorporated into permits
+- Need to review monitoring data 
+- Bacteria:
+  - Over 100 receiving water monitoring sites
+  - Weekly Sampling / 10 Years of Data
+  - 4 Indicator Bacteria 
+
 
 ## Example 4: Mapping Monitoring Data
 
+- 
+
+
 ## Example 5: Network Graphs
 
-## Example 6: Reading RAA Output Files
+
+## Example 6: RAA Output Files
+
+- RAA output given as text file output
+
+## Example 6: RAA Output Files - Plotting
+
+
 
 ## Example 7: Facets
 
+- Plot subsets of data in side-by-side plots
+- Wet Weather vs. Dry Weather
+- Monitoring Stations
+- Parameter by Parameter
+
+## Example 7: Facets - Geofaceting
+
 ## Example 8: Statistics
+
+## Example 8: Statistics - Regression Matrix
 
 ## Example 9: Statistical Modeling
 
 ## Example 10: 
 
+## RStudio
+
+- Free and Open-Source "Integrated Development Environment (IDE)" for R
+- _Highly, highly recommended if you want to use <footnote content="Chris is not affiliated with RStudio nor receives any incentives for recommending RStudio">R!!!_
+
+<img src="images/RStudio.png" align="middle" height="200" width="400") />
+
+
+## What does R look like?
+
+<img src="images/rstudioscreen.png" align="middle" height="450" width="750" margin="0 auto" />
+
+## What does R look like?
+
+<img src="images/rstudioscreen_captions.png" align="middle" height="450" width="750" margin="0 auto" />
+
+## Strengths (Much applies to other programming languages as well)
+- Repeatable
+- Transparent
+- Automation
+- Packages 
+
+## Weaknesses
+- Learning Curve
+- Sometimes I have nothing to show for
+- Sometimes I lose sight of big picture
+
+## Final Thoughts
+- R and R Packages are just another set of tools
+- Improve our ability to communicate
+- Improve our ability to
+- 
+
+## End
+
+Chris Lopez </br>
+Los Angeles Water Board </br>
+Stormwater Permitting Unit </br>
+chris.lopez@waterboards.ca.gov
+https://github.com/chrislopez28
