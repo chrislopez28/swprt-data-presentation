@@ -92,7 +92,7 @@ When you click the **Knit** button a document will be generated that includes bo
 
 ## Example 1: Plotting IGP Sites on Map
 
-```{r igp_code, echo =TRUE, message=FALSE, eval=FALSE}
+```{r igp_code, echo=TRUE, message=FALSE, eval=FALSE}
 
 library(dplyr)
 library(leaflet)
@@ -145,9 +145,33 @@ leaflet(rb4igp) %>%
   
 ```
 
-## Slide with Plot
+## Example 2: Scraping Tables from PDFs
 
-```{r pressure}
-plot(pressure)
+- PDF Report on Trash Assessments in San Mateo County, CA
+- Want to scrape data from tables within the document
+
+## Example 2: Scraping Tables from PDFs
+
+<img src="images/trashtable1.png" align="middle" height="500" width="500" margin="0 auto" />
+
+## Example 2: Scraping Tables from PDFs
+
+<img src="images/trashtable2.png" align="middle" height="450" width="750" margin="0 auto" />
+
+## Example 2: Scraping Tables from PDFs
+
+```{r scrape_code, echo=TRUE, message=FALSE, eval=FALSE}
+library(tabulizer)
+
+report <- "pdf/San Mateo trash RTAs 2006-07.pdf"
+lst <- extract_tables(report, encoding="UTF-8")
+
 ```
 
+## Example 2: Scraping Tables from PDFs
+
+<img src="images/trashtable1out.png" align="middle" height="450" width="750" margin="0 auto" />
+
+## Example 2: Scraping Tables from PDFs
+
+<img src="images/trashtable2out.png" align="middle" height="450" width="750" margin="0 auto" />
