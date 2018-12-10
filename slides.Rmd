@@ -116,7 +116,7 @@ leaflet(rb4igp) %>% addTiles() %>%
 
 ## Example 1: Plotting IGP Sites on Map
 
-```{r industrial, echo = FALSE, message=FALSE}
+```{r igp_output, echo = FALSE, message=FALSE}
 library(dplyr)
 library(leaflet)
 library(htmltools)
