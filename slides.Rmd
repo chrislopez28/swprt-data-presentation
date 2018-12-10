@@ -39,6 +39,11 @@ div.footnotes {
   });
 </script>
 
+<style>
+.small-code pre code {
+  font-size: 1em;
+}
+</style>
 
 ## R Markdown
 
@@ -79,10 +84,65 @@ When you click the **Knit** button a document will be generated that includes bo
 
 <img src="images/rstudioscreen_captions.png" align="middle" height="450" width="750" margin="0 auto" />
 
-## Slide with R Output
+## Example 1: Plotting IGP Sites on Map
 
-```{r cars, echo = TRUE}
-summary(cars)
+1. Use **SMARTS** Storm Water Data File Download menu, download a tab-delimited file text file of "Storm Water Applications - General Information" for Region 4. 
+2. Load the file into R and filter for **active IGP** sites.
+3. Use Leaflet package to plot sites on map and display specific information on mouseover.
+
+## Example 1: Plotting IGP Sites on Map
+
+```{r igp_code, echo =TRUE, message=FALSE, eval=FALSE}
+
+library(dplyr)
+library(leaflet)
+library(htmltools)
+
+# Load File
+filename <- "data/smarts_swapps_geninfo_2018-12-09.txt"
+rb4 <- read.delim(filename, sep = "\t", stringsAsFactors = FALSE)
+
+# Filter IGP Sites
+rb4igp <- rb4 %>% 
+  filter(PERMIT_TYPE == "Industrial") %>%
+  filter(STATUS == "Active")
+
+# Plot Map Using Leaflet (code for labels omitted due to space)
+leaflet(rb4igp) %>% addTiles() %>%
+  addCircles(lng = ~FACILITY_SITE_LONGITUDE, lat = ~FACILITY_SITE_LATITUDE,
+             opacity = 0.75, label = lapply(labs, HTML))
+  
+```
+
+## Example 1: Plotting IGP Sites on Map
+
+```{r industrial, echo = FALSE, message=FALSE}
+library(dplyr)
+library(leaflet)
+library(htmltools)
+
+filename <- "data/smarts_swapps_geninfo_2018-12-09.txt"
+
+rb4 <- read.delim(filename, sep = "\t", stringsAsFactors = FALSE)
+
+rb4igp <- rb4 %>%
+  filter(PERMIT_TYPE == "Industrial") %>%
+  filter(STATUS == "Active")
+
+labs <- lapply(seq(nrow(rb4igp)), function(i) {
+  paste0( '<b>', rb4igp[i, "OWNER_OPERATOR_NAME"], '</b></br>', 
+          rb4igp[i, "FACILITY_SITE_NAME"], '</br>', 
+          rb4igp[i, "FACILITY_SITE_ADDRESS"], '</br>', 
+          rb4igp[i, "FACILITY_SITE_CITY"], ', ', 
+          rb4igp[i, "FACILITY_SITE_STATE"], ' ', 
+          rb4igp[i, "FACILITY_SITE_ZIP"]) 
+})
+
+leaflet(rb4igp) %>% 
+  addTiles() %>%
+  addCircles(lng = ~FACILITY_SITE_LONGITUDE, lat = ~FACILITY_SITE_LATITUDE,
+             opacity = 0.75, label = lapply(labs, HTML))
+  
 ```
 
 ## Slide with Plot
