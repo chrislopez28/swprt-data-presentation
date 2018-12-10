@@ -45,25 +45,26 @@ div.footnotes {
 }
 </style>
 
-## R Markdown
 
-This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
 
 ## Presentation Objectives
 
-- Examples of R
-- Weaknesses and Strengths
+* Examples of R
+* Strengths and Weaknesses of R
 
 ## My Background
 
-- Staff in Municipal Stormwater Permitting Unit (i.e. the MS4 Unit)
-- Some rudimentary background in programming/coding
-- Enjoy learning new things
-- Appreciate good communication of information
+* Staff in Municipal Stormwater Permitting Unit (i.e. the MS4 Unit)
+* Some rudimentary background in programming/coding
+* Enjoy learning new things
+* Appreciate good communication of information
 
-## Some Background of R
+## Disclaimer
+
+* I am not an expert
+* Tools, packages, and best practices evolve
+
+## R
 
 - __Programming__ Language and Environment for Statistical Computing and Graphics
 - __Open-source__
@@ -164,13 +165,33 @@ lst <- extract_tables(report, encoding="UTF-8")
 ## Example 3: Analyzing Large Datasets for Compliance - Bacteria
 
 - Renewal of Region 4 Phase I MS4 Permits
-- ~50 TMDLs with Limitations incorporated into permits
-- Need to review monitoring data 
-- Bacteria:
-  - Over 100 receiving water monitoring sites
-  - Weekly Sampling / 10 Years of Data
-  - 4 Indicator Bacteria 
+    + Need to evaluate monitoring data (~40 TMDLs in permit)
+- Bacteria
+    + **Sites**: ~ 100 receiving water monitoring sites
+    + **Water Type**: Marine or Fresh
+    + **Beneficial Use**: REC-1, LREC-1, REC-2
+    + **Frequency**: Weekly (or more frequent) 
+    + **Period**: 10 Years
+    + **Parameters**: 4 Indicator Bacteria
+    + **Limitations**: Daily and Geo Mean 
 
+## Example 3: Analyzing Large Datasets for Compliance - Bacteria
+- Data Estimate:
+    + $(52 \ weeks)(10 \ years)(4 \ parameters)(100 \ sites)$
+    + $\approx \ 200,000 \ data \ points$
+    + $\approx \ 200,000 \ geometric \ means$
+    + $\approx \ 400,000 \ comparisons$
+
+## Example 3: Analyzing Large Datasets for Compliance - Bacteria
+- Created a Microsoft VBA Tool:
+
+<img src="images/bact_checker.png" align="middle" height="400" width="600" margin="0 auto" />
+
+
+## Example 3: Analyzing Large Datasets for Compliance - Bacteria
+- Created a Microsoft VBA Tool:
+
+<img src="images/bact_checker.png" align="middle" height="400" width="600" margin="0 auto" />
 
 ## Example 4: Mapping Monitoring Data
 
@@ -203,7 +224,9 @@ lst <- extract_tables(report, encoding="UTF-8")
 
 ## Example 9: Statistical Modeling
 
-## Example 10: 
+## Example 10: Presentations
+
+This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
 ## RStudio
 
