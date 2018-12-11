@@ -455,7 +455,7 @@ This is an R Markdown presentation. Markdown is a simple formatting syntax for a
 - Free and Open-Source "Integrated Development Environment (IDE)" for R
 - Highly, highly recommended if you want to use <footnote content="Chris is not affiliated with RStudio nor receives any incentives for recommending RStudio">R!!!
 
-<img src="images/RStudio.png" align="middle" height="200" width="400") />
+<img src="images/RStudio.png" align="middle" height="200" width="400" />
 
 
 ## What does R / RStudio look like?
