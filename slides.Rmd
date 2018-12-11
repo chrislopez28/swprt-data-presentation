@@ -1,5 +1,5 @@
 ---
-title: "R for Water Quality: <br>Region 4 Experiences"
+title: "Using R for Water Quality: <br>Region 4 Experiences"
 author: "Chris Lopez <br>Los Angeles Water Board"
 date: "December 11, 2018"
 output: ioslides_presentation
@@ -47,15 +47,15 @@ div.footnotes {
 
 ## Presentation Objectives
 
-* Example uses of R with **stormwater data**
-* Strengths, weaknesses, perspectives
+* Provide example uses of R with **stormwater data**
+* Opine on strengths, weaknesses, perspectives
 
 ## My Background
 
 * Staff in Municipal Stormwater Permitting Unit (i.e. the MS4 Unit)
 * Some rudimentary background in coding
 * Enjoy learning new things
-* Appreciate good communication of information
+* Appreciate when complex information is communicated elegantly and/or succintly 
 
 ## Disclaimer
 
@@ -73,10 +73,10 @@ div.footnotes {
 
 ## Analysis
 
-- Renewing Region 4 Phase I MS4 Permits
-    + Need to evaluate monitoring data (~50 TMDLs) before permit consideration
-    + Need to present our analysis to the LA Regional Board in a series of 3 workshops (*did this earlier this year*)
-    + Need to produce a monitoring data review report that goes over all the data (*working on finishing right now*)
+- Renewing Phase I MS4 Permits -> "Regional MS4 Permit"
+    + Evaluate monitoring data (~50 TMDLs) before permit consideration
+    + Present our monitoring data analyses to the LA Regional Board in a series of 3 workshops (*did this earlier this year*)
+    + Produce a monitoring data review report that goes over all the data (*working on finishing right now*)
 
 ## Example 1: Bacteria Data Review  
 
@@ -149,8 +149,8 @@ exceeds <- bact_ann_exceeds(data, stations, "REC-1", "marine",
 
 ## Visualizations
 - ggplot2 package
-- Standardize Formatting
-- Automate Plotting for Large Datasets
+- Standardize formatting
+- Automate plotting for large datasets
 - Replot when data updated
 
 ## Example 4: Boxplots
@@ -488,6 +488,7 @@ Chris Lopez </br>
 Los Angeles Water Board </br>
 Stormwater Permitting Unit </br>
 chris.lopez@waterboards.ca.gov </br>
-https://github.com/chrislopez28
+https://github.com/chrislopez28 </br>
 
-<img src="images/xkcd_00.png" align="right" margin="0 auto" />
+<img src="images/cat_proximity.png" align="middle"  height="325" width="340" margin="0 auto" />
+(Credit: xkcd.com)
