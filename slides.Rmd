@@ -49,7 +49,7 @@ div.footnotes {
 ## Presentation Objectives
 
 * Provide example uses of R with **stormwater data**
-* Opine on strengths, weaknesses, perspectives
+* Opine on strengths, weaknesses; Share perspective
 
 ## My Background
 
