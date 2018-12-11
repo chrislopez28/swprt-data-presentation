@@ -131,6 +131,7 @@ exceeds <- bact_ann_exceeds(data, stations, "REC-1", "marine",
 ```
 
 ## Example 1: Bacteria Data Review
+### R Bacteria Package
 - Need to know R to use
 - Adaptable
 - Fast (seconds vs. minutes)
@@ -160,7 +161,8 @@ exceeds <- bact_ann_exceeds(data, stations, "REC-1", "marine",
 
 ## Facets
 
-- Plot subsets of data side-by-side for comparison
+- Partition data by a categorical variable into subplots.
+- Allows you to see subsets of dataset side-by-side for comparison
 - The right facet can highlight and identify key information about a dataset 
 
 ## Example 5: Facet by Constituent
@@ -473,14 +475,15 @@ This is an R Markdown presentation. Markdown is a simple formatting syntax for a
 
 ## Weaknesses
 - Learning Curve
-- Sometimes I have nothing to show for the day 
-- Sometimes I can lose sight of the big picture 
+- Roadblocks 
+- Easy to get sidetracked
+- Need to be able to focus to code
 
 ## Final Thoughts
 - R and its packages are just another set of tools (it does not generate insight)
 - ~80% of my time working with data is spent cleaning data
-- Can help as a tool to communicate information, build analyses, and handle large datasets
-- Gateway to learning about other technologies and topics (HTML/CSS/Javascript, Git and GitHub, Statistics, Data Science, Visualizations)
+- R can help as a tool to communicate information, build analyses, and handle large datasets
+- R is a gateway to learning about other technologies and topics (HTML/CSS/Javascript, Git and GitHub, Statistics, Data Science, Visualizations)
 - Can change the way you see data
 
 ## End
